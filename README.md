@@ -61,6 +61,8 @@ ggplot(prop_2021, aes(x = "", y = prop_est, fill = flower_nonflower)) +
 
 Prop_plot_bloom$year <- as.factor(as.integer(Prop_plot_bloom$year))
 Prop_plot_bloom$month <- as.factor(as.character(Prop_plot_bloom$month))
+
+#filter out species of interest
 achmil <- filter(Prop_plot_bloom, species == "achmil")
 
 col_palette1 <- c( "goldenrod3","green4")
